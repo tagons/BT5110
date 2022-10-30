@@ -1,5 +1,7 @@
-flask
+flask~=2.2.2
 psycopg2-binary
 email_validator
 Flask-SQLAlchemy
 Flask_WTF
+WTForms~=3.0.1
+SQLAlchemy~=1.4.42
