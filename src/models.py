@@ -58,6 +58,55 @@ class Models:
             raise Exception("Student {} does not exist".format(email))
         return values[0]
 
+    def getBuyers(self):
+        values = self.executeRawSql("""SELECT * FROM buyer""").mappings().all()
+        return values
+
+# def getOrders(self, value):
+    #     values = self.executeRawSql("""SELECT * FROM order_info ORDER BY order_time DESC LIMIT :page,:size""",
+    #                                 value).mappings().all()
+    #     return values
+
+    def getOrders(self, value):
+        values = self.executeRawSql("""SELECT * FROM order_info ORDER BY order_time DESC LIMIT :size offset :page""",
+                                    value).mappings().all()
+        return values
+
+    def getFactorys(self):
+        values = self.executeRawSql("""SELECT * FROM factory""").mappings().all()
+        return values
+
+    def getProduct(self):
+        values = self.executeRawSql("""SELECT * FROM product""").mappings().all()
+        return values
+
+    def getTransportation(self):
+        values = self.executeRawSql("""SELECT * FROM transportation""").mappings().all()
+        return values
+
+    def addOrder(self, value):
+        return self.executeRawSql(
+            """
+            INSERT INTO order_info(order_id,factory_name, buyer_id, product_name, trans_mode, quantity,order_time) 
+            VALUES(:order_id,:factory_name, :buyer_id, :product_name, :trans_mode, :quantity,:order_time);
+            """,
+            value)
+
+    def getProductByProductName(self, product_name):
+        values = self.executeRawSql("""SELECT * FROM product where product_name = :product_name""",
+                                    {"product_name": product_name}).mappings().first()
+        return values
+
+    def deleteOrderById(self, order_id):
+        return self.executeRawSql("DELETE FROM order_info where order_id=:order_id;", {"order_id": order_id})
+
+    def updateOrder(self, value):
+        return self.executeRawSql(
+            """UPDATE order_info SET 
+            factory_name = :factory_name, buyer_id =:buyer_id, product_name = :product_name, trans_mode = :trans_mode, 
+            quantity = :quantity WHERE order_id = :order_id""",
+            value)
+
     def createModels(self):
         self.executeRawSql(
         """CREATE TABLE IF NOT EXISTS student (

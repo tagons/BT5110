@@ -1,4 +1,7 @@
-from flask import request, session, redirect, url_for, render_template, flash
+import datetime
+import random
+
+from flask import request, session, redirect, url_for, render_template, flash, jsonify
 
 from . models import Models
 from . forms import AddReaderForm, SignUpForm, SignInForm
@@ -117,6 +120,83 @@ def logout():
     except Exception as e:
         flash(str(e))
         return redirect(url_for('index'))
+
+if __name__ == '__main__':
+    app.run()
+
+
+@app.route('/order', methods=['POST', 'GET'])
+def order():
+    page = (int(request.args.get("page", 1)) - 1) * 10
+    size = 10
+    buyers = models.getBuyers()
+    factors = models.getFactorys()
+    products = models.getProduct()
+    transportations = models.getTransportation()
+
+    value = {
+        'page': page,
+        'size': size
+    }
+    orders = models.getOrders(value)
+    return render_template(
+        'order.html', buyers=buyers, orders=orders, factors=factors, products=products, transportations=transportations
+    )
+
+
+@app.route('/add_order/<factory_name>/<buyer_id>/<product_name>/<trans_mode>/<quantity>', methods=['POST'])
+def add_order(factory_name, buyer_id, product_name, trans_mode, quantity):
+    order_id = ""
+    for i in range(8):
+        order_id += str(random.randint(0, 9))
+    values = ({
+        "order_id": order_id,
+        "factory_name": factory_name,
+        "buyer_id": buyer_id,
+        "product_name": product_name,
+        "trans_mode": trans_mode,
+        "quantity": quantity,
+        "order_time": datetime.datetime.now()
+    })
+
+    product = models.getProductByProductName(product_name)
+    try:
+        if int(product['quantity']) >= int(quantity):
+            models.addOrder(values)
+            return jsonify("Add success")
+        else:
+            return jsonify("Insufficient inventory")
+    except:
+        return jsonify("Quantity type must be Int")
+
+
+@app.route('/delete_order/<order_id>', methods=['POST'])
+def delete_order(order_id):
+    models.deleteOrderById(order_id)
+    return jsonify("Delete success")
+
+
+@app.route('/update_order/<order_id>/<factory_name>/<buyer_id>/<product_name>/<trans_mode>/<quantity>',
+           methods=['POST'])
+def update_order(order_id, factory_name, buyer_id, product_name, trans_mode, quantity):
+    values = ({
+        "order_id": order_id,
+        "factory_name": factory_name,
+        "buyer_id": buyer_id,
+        "product_name": product_name,
+        "trans_mode": trans_mode,
+        "quantity": quantity
+    })
+    product = models.getProductByProductName(product_name)
+    try:
+        if int(product['quantity']) >= int(quantity):
+            models.updateOrder(values)
+            return jsonify("Modify success")
+        else:
+            return jsonify("Insufficient inventory")
+    except:
+        return jsonify("Quantity type must be Int")
+
 
 if __name__ == '__main__':
     app.run()

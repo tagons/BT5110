@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Order</title>
+
+    <link href="../static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap-theme.min.css">
+    <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/js/jquery-3.5.1/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+    <style type="text/css">
+      #us{
+        float: right;
+        margin-right: 20px;
+        margin-top: 10px;
+      }
+      #us h3{
+        margin: 0 0 0 0;
+      }
+      .ps{
+        width: 90%;
+        margin-top: 20px;
+        margin-left: 5%
+      }
+      table {
+        width: 100%;
+        background: #ccc;
+        margin: 10px auto;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        border: 1px solid #ccc;
+      }
+      th {
+        background: #eee;
+        font-weight: normal;
+      }
+      tr {
+        background: #fff;
+      }
+      tr:hover {
+        background: #cc0;
+      }
+      td a {
+        color: #06f;
+        text-decoration: none;
+      }
+      td a:hover {
+        color: #06f;
+        text-decoration: underline;
+      }
+      #icon{
+        float: right;
+        margin-top: -15px;
+      }
+      #signout{
+        width: 100px;
+        height: 20px;
+      }
+      #signout a{
+        padding: 2px 0px 2px 20px;
+      }
+
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="us">
+    <ul class="nav nav-pills">
+        <li><h3> {{session['current_user']}} &nbsp</h3></li>
+        <li role="presentation" class="active" id="signout"><a href="/logout">Sign Out</a></li>
+    </ul>
+</div>
+<div>
+    <ul class="nav nav-tabs">
+        <li role="presentation"><a href="">Books</a></li>
+        <li role="presentation"><a href="/add">Add Readers</a></li>
+        <li role="presentation"><a href="/about_user">About</a></li>
+        <li role="presentation" class="active"><a href="/order">Order</a></li>
+
+    </ul>
+</div>
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+{% for message in messages %}
+<h3 class="flashes" align="center" style="color:#337ab7">{{ message }}</h3>
+{% endfor %}
+{% endif %}
+{% endwith %}
+<div class="ps">
+    <div id="add_d">
+        <form action="./order">
+            factory_name: <select id="factory_name">
+            {% for factory in factors %}
+            <option>{{factory.factory_name}}</option>
+            {% endfor %}
+        </select>
+            buyer_id: <select id="buyer_id">
+            {% for buyer in buyers %}
+            <option value="{{buyer.buyer_id}}">{{buyer.buyer_name}}</option>
+            {% endfor %}
+        </select>
+
+            product_name: <select id="product_name">
+            {% for product in products %}
+            <option>{{product.product_name}}</option>
+            {% endfor %}
+        </select>
+
+            trans_mode: <select id="trans_mode">
+            {% for transportation in transportations %}
+            <option>{{transportation.trans_mode}}</option>
+            {% endfor %}
+        </select>
+
+            quantity: <input type="text" id="quantity">
+            <button type="button" onclick="add_fuc()" id="add_button">Add</button>
+        </form>
+    </div>
+
+    <table border="1" cellspacing="0" class="tables_">
+        <tr>
+            <th>order_id</th>
+            <th>factory_name</th>
+            <th>buyer_id</th>
+            <th>product_name</th>
+            <th>trans_mode</th>
+            <th>quantity</th>
+            <th>order_time</th>
+            <th>button</th>
+
+        </tr>
+        {% for order in orders %}
+        <tr>
+            <td>{{order.order_id}}</td>
+            <td>{{order.factory_name}}</td>
+            <td>{{order.buyer_id}}</td>
+            <td>{{order.product_name}}</td>
+            <td>{{order.trans_mode}}</td>
+            <td>{{order.quantity}}</td>
+            <td>{{order.order_time}}</td>
+            <td><a onclick="delete_fuc({{order.order_id}})">Delete</a>
+              /
+              <a onclick="update_btn({{order.order_id}})"href="javascript:;">Modify</a>
+            </td>
+        </tr>
+        <div style="display:none" id="{{order.order_id}}">
+            Modify box
+            <form action="./order">
+                factory_name: <select name="factory_name" id = '{{order.order_id }}_factory_name'>
+                <option selected="selected" >{{order.factory_name}}</option>
+
+                {% for factory in factors %}
+                {% if factory.factory_name != order.factory_name%}
+                <option>{{factory.factory_name}}</option>
+                {% endif %}
+                {% endfor %}
+            </select>
+                buyer_id: <select name="buyer_id" id="{{order.order_id }}_buyer_id">
+
+                {% for buyer in buyers %}
+                {% if buyer.buyer_id == order.buyer_id%}
+                <option value="{{buyer.buyer_id}}" selected="selected" >{{buyer.buyer_name}}</option>
+                {% endif %}
+                <option value="{{buyer.buyer_id}}">{{buyer.buyer_name}}</option>
+                {% endfor %}
+            </select>
+
+                product_name: <select name="product_name" id="{{order.order_id }}_product_name">
+                <option selected="selected">{{order.product_name}}</option>
+
+                {% for product in products %}
+                {% if product.product_name != order.product_name%}
+                <option>{{product.product_name}}</option>
+                {% endif %}
+                {% endfor %}
+            </select>
+
+                trans_mode: <select name="trans_mode" id="{{order.order_id }}_trans_mode">
+                <option selected="selected">{{order.trans_mode}}</option>
+
+                {% for transportation in transportations %}
+                {% if transportation.trans_mode != order.trans_mode%}
+                <option>{{transportation.trans_mode}}</option>
+                {% endif %}
+                {% endfor %}
+            </select>
+
+                quantity: <input type="text" name="quantity" id="{{order.order_id }}_quantity">
+                <button type="button" onclick="update_fuc({{order.order_id}})">Modify</button>
+            </form>
+        </div>
+        {% endfor %}
+    </table>
+    <form action="./order" method="get">
+        Section<input type="text" name="page" size="1px">Page
+        <button type="submit">Go</button>
+    </form>
+
+</div>
+<script>
+
+  var loc = 'http://127.0.0.1:5001'
+
+  function update_btn(order_id) {
+    if (document.getElementById(order_id).style.display == 'block'){
+        document.getElementById(order_id).style.display = 'none'
+        document.getElementById("add_d").style.display = 'block'
+    }else{
+        document.getElementById(order_id).style.display = 'block'
+        document.getElementById("add_d").style.display = 'none'
+    }
+  }
+
+  function add_fuc(){
+    var factory_name = $("#factory_name").val()
+    var buyer_id = $("#buyer_id").val()
+    var product_name = $("#product_name").val()
+    var trans_mode = $("#trans_mode").val()
+    var quantity = $("#quantity").val()
+
+    var data = "/" + factory_name + "/" + buyer_id+ "/" + product_name+ "/" + trans_mode+ "/" + quantity
+    $.ajax({
+      url:loc + '/add_order'+data,
+      dataType:"json",
+      type:"post",
+      success:function(res){
+           alert(res)
+         window.location.replace(loc + '/order')
+      }
+    })
+  }
+
+  function delete_fuc(order_id){
+    $.ajax({
+      url:loc + '/delete_order/'+order_id,
+      dataType:"json",
+      type:"post",
+      success:function(res){
+           alert(res)
+           window.location.replace(loc + '/order')
+      }
+    })
+  }
+
+  function update_fuc(order_id){
+    var order_id = order_id
+    var factory_name = $("#"+order_id+"_factory_name").val()
+    var buyer_id = $("#"+order_id+"_buyer_id").val()
+    var product_name = $("#"+order_id+"_product_name").val()
+    var trans_mode = $("#"+order_id+"_trans_mode").val()
+    var quantity = $("#"+order_id+"_quantity").val()
+
+    var data = "/" + order_id + "/" + factory_name + "/" + buyer_id+ "/" + product_name+ "/" + trans_mode+ "/" + quantity
+
+    $.ajax({
+      url:loc + '/update_order'+data,
+      dataType:"json",
+      type:"post",
+      success:function(res){
+           alert(res)
+          window.location.replace(loc + '/order')
+      }
+    })
+  }
+
+</script>
+</body>
+</html>
