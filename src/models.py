@@ -92,6 +92,24 @@ class Models:
             """,
             value)
 
+    def rollup_func(self):
+        return self.executeRawSql(
+            """
+            SELECT SUM(quantity) as sum,product_name,buyer_id
+            FROM order_info 
+            GROUP BY ROLLUP(product_name, buyer_id);
+            """
+        )
+
+    def cube_func(self):
+        return self.executeRawSql(
+            """
+            SELECT SUM(quantity),product_name,buyer_id
+            FROM order_info 
+            GROUP BY CUBE(product_name, buyer_id);
+            """
+        )
+
     def getProductByProductName(self, product_name):
         values = self.executeRawSql("""SELECT * FROM product where product_name = :product_name""",
                                     {"product_name": product_name}).mappings().first()
@@ -136,6 +154,7 @@ class Models:
                 PRIMARY KEY (isbn, email)
             );
             """)
+
 # data = ( { "id": 1, "title": "The Hobbit", "primary_author": "Tolkien" },
     #              { "id": 2, "title": "The Silmarillion", "primary_author": "Tolkien" },
     #     )

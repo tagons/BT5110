@@ -197,6 +197,19 @@ def update_order(order_id, factory_name, buyer_id, product_name, trans_mode, qua
     except:
         return jsonify("Quantity type must be Int")
 
+@app.route('/order_sum_insight')
+def order_sum_insight():
+    rollup = models.rollup_func()
+
+    try:
+        cube = models.cube_func()
+    except:
+        cube = {
+            "sum": "",
+            "product_name": "",
+            "buyer_id": ""
+        }
+    return render_template('order_sum_insight.html', rollup=rollup, cube=cube)
 
 if __name__ == '__main__':
     app.run()

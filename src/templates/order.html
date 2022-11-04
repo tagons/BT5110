@@ -73,6 +73,7 @@
 
 
 
+
     </style>
 </head>
 <body>
@@ -88,6 +89,7 @@
         <li role="presentation"><a href="/add">Add Readers</a></li>
         <li role="presentation"><a href="/about_user">About</a></li>
         <li role="presentation" class="active"><a href="/order">Order</a></li>
+        <li role="presentation"><a href="/order_sum_insight">OrderSumInsight</a></li>
 
     </ul>
 </div>
@@ -151,15 +153,15 @@
             <td>{{order.quantity}}</td>
             <td>{{order.order_time}}</td>
             <td><a onclick="delete_fuc({{order.order_id}})">Delete</a>
-              /
-              <a onclick="update_btn({{order.order_id}})"href="javascript:;">Modify</a>
+                /
+                <a onclick="update_btn({{order.order_id}})" href="javascript:;">Modify</a>
             </td>
         </tr>
         <div style="display:none" id="{{order.order_id}}">
             Modify box
             <form action="./order">
-                factory_name: <select name="factory_name" id = '{{order.order_id }}_factory_name'>
-                <option selected="selected" >{{order.factory_name}}</option>
+                factory_name: <select name="factory_name" id='{{order.order_id }}_factory_name'>
+                <option selected="selected">{{order.factory_name}}</option>
 
                 {% for factory in factors %}
                 {% if factory.factory_name != order.factory_name%}
@@ -171,7 +173,7 @@
 
                 {% for buyer in buyers %}
                 {% if buyer.buyer_id == order.buyer_id%}
-                <option value="{{buyer.buyer_id}}" selected="selected" >{{buyer.buyer_name}}</option>
+                <option value="{{buyer.buyer_id}}" selected="selected">{{buyer.buyer_name}}</option>
                 {% endif %}
                 <option value="{{buyer.buyer_id}}">{{buyer.buyer_name}}</option>
                 {% endfor %}
@@ -274,6 +276,7 @@
       }
     })
   }
+
 
 </script>
 </body>
