@@ -110,15 +110,14 @@
     </div>
     <div>
       <ul class="nav nav-tabs">
-        <li role="presentation"><a href="">ChololateFactory</a></li>
-        <li role="presentation"><a href="/about_user">About</a></li>
         <li role="presentation"><a href="/order">Order</a></li>
-        <li role="presentation" class="active"><a href="/order_sum_insight">OrderSumInsight</a></li>
-        <li role="presentation" class="active"><a href="/order_sum_product_name">SumInsightOnProducts</a></li>
-        <li role="presentation" class="active"><a href="/order_sum_factory_name">SumInsightOnFactory</a></li>
-        <li role="presentation" class="active"><a href="/order_sum_trans_mode">SumInsightOnTransportMode</a>
+        <li role="presentation"><a href="/order_sum_insight">OrderSumInsight</a></li>
+        <li role="presentation"><a href="/order_sum_product_name">InsightOnProducts</a></li>
+        <li role="presentation"><a href="/order_sum_factory_name">InsightOnFactory</a></li>
+        <li role="presentation"><a href="/order_sum_trans_mode">InsightOnTransportMode</a>
         </li>
-        <li role="presentation" class="active"><a href="/order_sum_buyer_id">SumInsightOnBuyer</a>
+        <li role="presentation"><a href="/order_sum_buyer_id">InsightOnBuyer</a>
+        <li role="presentation"><a href="/order_sum_order_time">EachMonth</a>
       </ul>
     </div>
     <div class="ps">
@@ -152,7 +151,9 @@
           <div id="d8b4710b07964e4586da964c31851f1a" class="chart-container" style="width: 800px;">
             <svg id="chart_d8b4710b07964e4586da964c31851f1a"></svg>
           </div>
-
+          <div id="3b59e23482254f02b6221b9d4223db0b" class="chart-container" style="width: 800px">
+            <svg id="chart_3b59e23482254f02b6221b9d4223db0b"></svg>
+          </div>
           <script>
 
             var getfd1 = document.getElementsByName('fd1');
@@ -180,7 +181,18 @@
                 }, "options": { "innerRadius": 0.5, "legendPosition": 1 }
               });
 
-
+            const svg_3b59e23482254f02b6221b9d4223db0b = document.querySelector('#chart_3b59e23482254f02b6221b9d4223db0b')
+            const chart_3b59e23482254f02b6221b9d4223db0b = new chartXkcd.Bar(svg_3b59e23482254f02b6221b9d4223db0b,
+              {
+                "title": "rollup Bar chart", "data": {
+                  "datasets": [{
+                    "label": "order quantity",
+                    "data": datasets
+                  }],
+                  "labels": labels
+                },
+                "xLabel": "product name", "yLabel": "order quantity", "options": { "yTickCount": 3 }
+              });
 
             const svg_d8b4710b07964e4586da964c31851f1a = document.querySelector('#chart_d8b4710b07964e4586da964c31851f1a')
             const chart_d8b4710b07964e4586da964c31851f1a = new chartXkcd.Radar(svg_d8b4710b07964e4586da964c31851f1a,

@@ -223,8 +223,8 @@ def sum_buyer_id():
         output = models.rollup_at_buyer_id()
     except:
         output = {
-            "sum": "",
-            "buyer_id": ""
+            "buyer_id": "",
+            "sum": ""
         }
     return render_template('order_sum_buyer_id.html', output=output)
 
@@ -234,10 +234,10 @@ def sum_factory_name():
     try:
         output = models.rollup_at_factory_name()
     except:
-        output = {
-            "sum": "",
-            "factory_name": ""
-        }
+        output = {"factory_name": "",
+                  "sum": ""
+
+                  }
     return render_template('order_sum_factory_name.html', output=output)
 
 
@@ -247,8 +247,8 @@ def sum_trans_mode():
         output = models.rollup_at_trans_mode()
     except:
         output = {
-            "sum": "",
-            "trans_mode": ""
+            "trans_mode": "",
+            "sum": ""
         }
     return render_template('order_sum_trans_mode.html', output=output)
 
@@ -259,8 +259,8 @@ def sum_product_name():
         output = models.rollup_at_product_name()
     except:
         output = {
-            "sum": "",
-            "product_name": ""
+            "product_name": "",
+            "sum": ""
         }
     return render_template('order_sum_product_name.html', output=output)
 
@@ -271,8 +271,8 @@ def sum_order_time():
         output = models.rollup_at_order_time()
     except:
         output = {
-            "sum": "",
-            "order_time": ""
+            "each_day": "",
+            "sum_q": ""
         }
     return render_template('order_sum_order_time.html', output=output)
 

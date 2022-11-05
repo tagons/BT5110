@@ -157,10 +157,12 @@ class Models:
 
     def rollup_at_order_time(self):
         return self.executeRawSql(
+            # to_date(order_time, 'YYYY-MM-DD HH24:MI:SS.MS.US') each_day,
             """
-            SELECT order_time, SUM(quantity)
+            SELECT to_char(date_trunc('month', order_time), 'YYYY-MM') as each_m, SUM(quantity) as sum_q
             FROM order_info 
-            GROUP BY (product_name);
+            GROUP BY each_m
+            ORDER BY each_m;
             """
         )
 

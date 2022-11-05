@@ -1,88 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Books</title>
+    <title>Order Sum each Month</title>
 
     <link href="../static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../static/bootstrap/css/bootstrap-theme.min.css">
     <script src="../static/bootstrap/js/bootstrap.min.js"></script>
     <script src="../static/js/jquery-3.5.1/jquery-3.5.1.min.js"></script>
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.xkcd@1.1/dist/chart.xkcd.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
     <style type="text/css">
-      #us{
+      #us {
         float: right;
         margin-right: 20px;
         margin-top: 10px;
       }
-      #us h3{
+
+      #us h3 {
         margin: 0 0 0 0;
       }
-      .ps{
-        width: 60%;
+
+      .ps {
+        width: 90%;
         margin-top: 20px;
-        margin-left: 20%
+        margin-left: 5%
       }
-      #icon{
+
+      table {
+        width: 100%;
+        background: #ccc;
+        margin: 10px auto;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        border: 1px solid #ccc;
+      }
+
+      th {
+        background: #eee;
+        font-weight: normal;
+      }
+
+      tr {
+        background: #fff;
+      }
+
+      tr:hover {
+        background: #cc0;
+      }
+
+      td a {
+        color: #06f;
+        text-decoration: none;
+      }
+
+      td a:hover {
+        color: #06f;
+        text-decoration: underline;
+      }
+
+      #icon {
         float: right;
         margin-top: -15px;
       }
-      #signout{
+
+      #signout {
         width: 100px;
         height: 20px;
       }
-      #signout a{
+
+      #signout a {
         padding: 2px 0px 2px 20px;
       }
 
+      .out {
+        width: 1300px;
+        height: 700px;
+      }
 
+      .c_div {
+        float: left;
+        width: 45%;
+        height: 100%;
+        margin-left: 3%;
+        text-align: center;
+        overflow: auto;
+      }
     </style>
-</head>
-<body>
-<div id="us">
-    <ul class="nav nav-pills">
-        <li><h3> {{session['current_user']}} &nbsp</h3></li>
+  </head>
+
+  <body>
+    <div id="us">
+      <ul class="nav nav-pills">
+        <li>
+          <h3> {{session['current_user']}} &nbsp</h3>
+        </li>
         <li role="presentation" class="active" id="signout"><a href="/logout">Sign Out</a></li>
-    </ul>
-</div>
-<div>
-    <ul class="nav nav-tabs">
-        <li role="presentation" class="active"><a href="">Books</a></li>
-        <li role="presentation"><a href="/add">Add Readers</a></li>
-        <li role="presentation"><a href="/about_user">About</a></li>
+      </ul>
+    </div>
+    <div>
+      <ul class="nav nav-tabs">
         <li role="presentation"><a href="/order">Order</a></li>
         <li role="presentation"><a href="/order_sum_insight">OrderSumInsight</a></li>
-
-    </ul>
-</div>
-{% with messages = get_flashed_messages() %}
-{% if messages %}
-{% for message in messages %}
-<h3 class="flashes" align="center" style="color:#337ab7">{{ message }}</h3>
-{% endfor %}
-{% endif %}
-{% endwith %}
-<div class="ps">
-    {% for i in booksAndAssignments %}
-    <div class="panel panel-info">
-        <div class="panel-heading">
-            <div><h3 class="panel-title">{{i.title}} (ISBN: {{i.isbn}})</h3></div>
-            {% if i.email != None %}
-            <div id="icon">
-                <a class="glyphicon glyphicon-pencil" href="/update/{{i.email}}/{{ i.isbn }}"></a>&nbsp &nbsp
-                <a class="glyphicon glyphicon-trash" id="del" href="/delete/{{i.email}}/{{ i.isbn }}"></a>
-            </div>
-            {% endif %}
-        </div>
-        <div class="panel-body">
-            <p>BY: {{i.author}} ----- Read BY: {{i.email}}</p>
-        </div>
+        <li role="presentation"><a href="/order_sum_product_name">InsightOnProducts</a></li>
+        <li role="presentation"><a href="/order_sum_factory_name">InsightOnFactory</a></li>
+        <li role="presentation"><a href="/order_sum_trans_mode">InsightOnTransportMode</a>
+        </li>
+        <li role="presentation"><a href="/order_sum_buyer_id">InsightOnBuyer</a>
+        <li role="presentation"><a href="/order_sum_order_time">EachMonth</a>
+      </ul>
     </div>
-    {% endfor %}
-</div>
-</body>
+    <div class="ps">
+      <div class="out">
+        <div class="left c_div" style="width: 300px;">
+
+          <h1>Order quantity per Month</h1>
+          <table>
+            <tr>
+              <th>Each month</th>
+              <th>Sum</th>
+            </tr>
+            {% for i in output%}
+            <tr>
+              <td name="fd1">{{i.each_m}}</td>
+              <td name="fd2">{{i.sum_q}}</td>
+            </tr>
+            {% endfor %}
+          </table>
+
+
+
+
+        </div>
+        <div class="right c_div" style="width: 820px;">
+          <h1>Charts of data above</h1>
+          <div id="937268f03e00474c870ab7c0bb6371d3" class="chart-container" style="width: 800px;">
+            <svg id="chart_937268f03e00474c870ab7c0bb6371d3"></svg>
+          </div>
+          <div id="3b59e23482254f02b6221b9d4223db0b" class="chart-container" style="width: 800px">
+            <svg id="chart_3b59e23482254f02b6221b9d4223db0b"></svg>
+          </div>
+          <div id="742404def42844fc8796ed80794859ff" class="chart-container" style="width: 800px">
+            <svg id="chart_742404def42844fc8796ed80794859ff"></svg>
+          </div>
+
+          <script>
+
+            var getfd1 = document.getElementsByName('fd1');
+            var getfd2 = document.getElementsByName('fd2');
+            var fd1 = [];
+            var fd2 = [];
+            for (var i = 0; i < getfd1.length; i++) {
+              fd1.push(getfd1[i].innerText);
+              fd2.push(getfd2[i].innerText);
+            }
+            var labels = fd1;
+            var datasets = [];
+            for (var i = 0; i < getfd2.length; i++) { datasets.push(Number(fd2[i])) }
+
+            const svg_937268f03e00474c870ab7c0bb6371d3 = document.querySelector('#chart_937268f03e00474c870ab7c0bb6371d3')
+            const chart_937268f03e00474c870ab7c0bb6371d3 = new chartXkcd.Pie(svg_937268f03e00474c870ab7c0bb6371d3,
+              {
+                "title": "rollup Pie Chart", "data":
+                {
+                  "datasets": [{
+                    "label": "order quantity",
+                    "data": datasets
+                  }],
+                  "labels": labels
+                }, "options": { "innerRadius": 0.5, "legendPosition": 1 }
+              });
+
+            const svg_3b59e23482254f02b6221b9d4223db0b = document.querySelector('#chart_3b59e23482254f02b6221b9d4223db0b')
+            const chart_3b59e23482254f02b6221b9d4223db0b = new chartXkcd.Bar(svg_3b59e23482254f02b6221b9d4223db0b,
+              {
+                "title": "rollup Bar chart", "data": {
+                  "datasets": [{
+                    "label": "order quantity",
+                    "data": datasets
+                  }],
+                  "labels": labels
+                },
+                "xLabel": "product name", "yLabel": "order quantity", "options": { "yTickCount": 3 }
+              });
+
+
+            const svg_742404def42844fc8796ed80794859ff = document.querySelector('#chart_742404def42844fc8796ed80794859ff')
+            const chart_742404def42844fc8796ed80794859ff = new chartXkcd.Line(svg_742404def42844fc8796ed80794859ff,
+              {
+                "title": "rollup Line chart", "data": {
+                  "datasets":
+                    [{
+                      "label": "order quantity",
+                      "data": datasets
+                    }],
+                  "labels": labels
+                }, "xLabel": "product name", "yLabel": "product quantity", "options": { "yTickCount": 3, "legendPosition": 1 }
+              });
+
+
+
+          </script>
+
+        </div>
+
+
+
+      </div>
+      <script>
+      </script>
+  </body>
+
 </html>
