@@ -22,7 +22,7 @@ insert into factory (factory_name, address, contact) values ('Kuhic-Ullrich', '1
 insert into factory (factory_name, address, contact) values ('Howell Group', '75 Independence Hill', '136-167-3104');
 
 
-insert into transportation (trans_mode, unit_cost, capacity) values ('Trunk', 20, 20);
+insert into transportation (trans_mode, unit_cost, capacity) values ('Truck', 20, 20);
 insert into transportation (trans_mode, unit_cost, capacity) values ('Train', 5, 500);
 insert into transportation (trans_mode, unit_cost, capacity) values ('Plane', 100, 3);
 insert into transportation (trans_mode, unit_cost, capacity) values ('Ship', 1, 2000);

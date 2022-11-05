@@ -2,9 +2,11 @@ from sqlalchemy import create_engine
 from sqlalchemy.sql import text
 import os
 
+
 class Models:
     def __init__(self):
-        self.engine = create_engine(os.environ.get('DB_URL', 'postgresql://postgres:postgre@localhost:5432/bt5110'))
+        self.engine = create_engine(os.environ.get(
+            'DB_URL', 'postgresql://postgres:postgre@localhost:3307/bt5110'))
 
     def executeRawSql(self, statement, params={}):
         out = None
@@ -21,7 +23,7 @@ class Models:
 
     def updateAssignment(self, value):
         return self.executeRawSql("""UPDATE assignment SET email=:email WHERE isbn=:isbn;""", value)
-    
+
     def addAssignment(self, value):
         return self.executeRawSql("""INSERT INTO assignment(email, isbn) VALUES(:email, :isbn);""", value)
 
@@ -32,9 +34,11 @@ class Models:
         return self.executeRawSql("DELETE FROM assignment where email=:email and isbn=:isbn;", value)
 
     def getAssignment(self, value):
-        values = self.executeRawSql("""SELECT * FROM assignment WHERE email=:email and isbn=:isbn;""", value).mappings().all()
+        values = self.executeRawSql(
+            """SELECT * FROM assignment WHERE email=:email and isbn=:isbn;""", value).mappings().all()
         if len(values) == 0:
-            raise Exception("Book {} has not been assignment by {}".format(value["isbn"], value["email"]))
+            raise Exception("Book {} has not been assignment by {}".format(
+                value["isbn"], value["email"]))
         return values[0]
 
     def getAllBooks(self):
@@ -47,13 +51,15 @@ class Models:
         return self.executeRawSql("SELECT book.isbn, email, title, author FROM book LEFT JOIN assignment ON book.isbn = assignment.isbn;").mappings().all()
 
     def getProfessorByEmail(self, email):
-        values = self.executeRawSql("""SELECT * FROM professor WHERE email=:email;""", {"email": email}).mappings().all()
+        values = self.executeRawSql(
+            """SELECT * FROM professor WHERE email=:email;""", {"email": email}).mappings().all()
         if len(values) == 0:
             raise Exception("Professor {} does not exist".format(email))
         return values[0]
 
     def getStudentByEmail(self, email):
-        values = self.executeRawSql("""SELECT * FROM student WHERE email=:email;""", {"email": email}).mappings().all()
+        values = self.executeRawSql(
+            """SELECT * FROM student WHERE email=:email;""", {"email": email}).mappings().all()
         if len(values) == 0:
             raise Exception("Student {} does not exist".format(email))
         return values[0]
@@ -73,15 +79,18 @@ class Models:
         return values
 
     def getFactorys(self):
-        values = self.executeRawSql("""SELECT * FROM factory""").mappings().all()
+        values = self.executeRawSql(
+            """SELECT * FROM factory""").mappings().all()
         return values
 
     def getProduct(self):
-        values = self.executeRawSql("""SELECT * FROM product""").mappings().all()
+        values = self.executeRawSql(
+            """SELECT * FROM product""").mappings().all()
         return values
 
     def getTransportation(self):
-        values = self.executeRawSql("""SELECT * FROM transportation""").mappings().all()
+        values = self.executeRawSql(
+            """SELECT * FROM transportation""").mappings().all()
         return values
 
     def addOrder(self, value):
@@ -110,6 +119,51 @@ class Models:
             """
         )
 
+    def rollup_at_product_name(self):
+        return self.executeRawSql(
+            """
+            SELECT product_name,SUM(quantity)
+            FROM order_info 
+            GROUP BY product_name;
+            """
+        )
+
+    def rollup_at_trans_mode(self):
+        return self.executeRawSql(
+            """
+            SELECT trans_mode, SUM(quantity)
+            FROM order_info 
+            GROUP BY trans_mode;
+            """
+        )
+
+    def rollup_at_buyer_id(self):
+        return self.executeRawSql(
+            """
+            SELECT buyer_id, SUM(quantity)
+            FROM order_info 
+            GROUP BY CUBE(buyer_id);
+            """
+        )
+
+    def rollup_at_factory_name(self):
+        return self.executeRawSql(
+            """
+            SELECT factory_name, SUM(quantity)
+            FROM order_info 
+            GROUP BY CUBE(factory_name);
+            """
+        )
+
+    def rollup_at_order_time(self):
+        return self.executeRawSql(
+            """
+            SELECT order_time, SUM(quantity)
+            FROM order_info 
+            GROUP BY CUBE(product_name);
+            """
+        )
+
     def getProductByProductName(self, product_name):
         values = self.executeRawSql("""SELECT * FROM product where product_name = :product_name""",
                                     {"product_name": product_name}).mappings().first()
@@ -127,13 +181,13 @@ class Models:
 
     def createModels(self):
         self.executeRawSql(
-        """CREATE TABLE IF NOT EXISTS student (
+            """CREATE TABLE IF NOT EXISTS student (
             email TEXT PRIMARY KEY
         );
         """)
 
         self.executeRawSql(
-        """CREATE TABLE IF NOT EXISTS professor (
+            """CREATE TABLE IF NOT EXISTS professor (
             email TEXT PRIMARY KEY,
             password TEXT NOT NULL
         );

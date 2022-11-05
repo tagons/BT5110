@@ -32,7 +32,7 @@ VALUES
   (
     'CIN-1280-5728-3I', 'Weissnat, Bernhard and Kuhlman', 
     '59-044-7580', 'Chocolate_White', 
-    'Trunk', 116, '2021-10-09 05:05:00'
+    'Truck', 116, '2021-10-09 05:05:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -164,7 +164,7 @@ VALUES
   (
     'MCN-9384-5314-PP', 'Glover LLC', 
     '97-594-3740', 'Chocolate_Vanilla', 
-    'Trunk', 30, '2021-11-03 13:50:00'
+    'Truck', 30, '2021-11-03 13:50:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -368,7 +368,7 @@ VALUES
   (
     'ARJ-9338-3808-V9', 'Luettgen, Cremin and Bahringer', 
     '59-044-7580', 'Chocolate_Spread', 
-    'Trunk', 136, '2021-10-19 23:04:00'
+    'Truck', 136, '2021-10-19 23:04:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -416,7 +416,7 @@ VALUES
   (
     'KFH-8449-2078-X6', 'Greenfelder LLC', 
     '07-455-6634', 'Chocolate_Spread', 
-    'Trunk', 76, '2021-12-07 22:13:00'
+    'Truck', 76, '2021-12-07 22:13:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -428,7 +428,7 @@ VALUES
   (
     'CVF-5751-6618-NK', 'Greenfelder LLC', 
     '57-347-6202', 'Chocolate_Milk', 
-    'Trunk', 19, '2021-12-22 23:55:00'
+    'Truck', 19, '2021-12-22 23:55:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -440,7 +440,7 @@ VALUES
   (
     'ACR-6559-8891-GU', 'Glover LLC', 
     '10-491-2446', 'Chocolate_Strawberry', 
-    'Trunk', 52, '2022-03-04 00:52:00'
+    'Truck', 52, '2022-03-04 00:52:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -464,7 +464,7 @@ VALUES
   (
     'NBV-5264-1862-PM', 'Howell Group', 
     '54-411-1467', 'Chocolate_White', 
-    'Trunk', 6, '2022-01-13 12:02:00'
+    'Truck', 6, '2022-01-13 12:02:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -596,7 +596,7 @@ VALUES
   (
     'KZO-3583-2881-S6', 'Weissnat, Bernhard and Kuhlman', 
     '88-043-5868', 'Chocolate_Almond', 
-    'Trunk', 45, '2022-07-23 18:30:00'
+    'Truck', 45, '2022-07-23 18:30:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -680,7 +680,7 @@ VALUES
   (
     'QAN-1227-7959-2R', 'Rippin, Strosin and Champlin', 
     '30-000-1093', 'Chocolate_Strawberry', 
-    'Trunk', 101, '2022-05-25 04:27:00'
+    'Truck', 101, '2022-05-25 04:27:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -728,7 +728,7 @@ VALUES
   (
     'WTI-6258-9625-F8', 'Kling Inc', 
     '77-639-8358', 'Chocolate_Milk', 
-    'Trunk', 162, '2021-11-09 16:18:00'
+    'Truck', 162, '2021-11-09 16:18:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -764,7 +764,7 @@ VALUES
   (
     'HWJ-4765-1122-3Y', 'Douglas, Hoppe and Stark', 
     '59-044-7580', 'Chocolate_Strawberry', 
-    'Trunk', 93, '2022-05-29 20:21:00'
+    'Truck', 93, '2022-05-29 20:21:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -788,7 +788,7 @@ VALUES
   (
     'FCS-5594-4866-M8', 'Luettgen, Cremin and Bahringer', 
     '97-594-3740', 'Chocolate_Strawberry', 
-    'Trunk', 122, '2022-02-25 05:54:00'
+    'Truck', 122, '2022-02-25 05:54:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -908,7 +908,7 @@ VALUES
   (
     'YTM-4033-8203-6A', 'Douglas, Hoppe and Stark', 
     '10-491-2446', 'Chocolate_Milk', 
-    'Trunk', 41, '2021-11-10 08:25:00'
+    'Truck', 41, '2021-11-10 08:25:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -980,7 +980,7 @@ VALUES
   (
     'HUP-4850-8596-VN', 'Dibbert, Mitchell and Dooley', 
     '59-044-7580', 'Chocolate_Dark', 
-    'Trunk', 38, '2022-08-11 15:06:00'
+    'Truck', 38, '2022-08-11 15:06:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -1016,7 +1016,7 @@ VALUES
   (
     'PVU-0674-7301-F8', 'Luettgen, Cremin and Bahringer', 
     '54-411-1467', 'Chocolate_Cake', 
-    'Trunk', 82, '2022-07-14 19:57:00'
+    'Truck', 82, '2022-07-14 19:57:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -1160,7 +1160,7 @@ VALUES
   (
     'IXC-4037-2553-LP', 'Glover LLC', 
     '88-043-5868', 'Chocolate_Spread', 
-    'Trunk', 128, '2022-04-21 00:52:00'
+    'Truck', 128, '2022-04-21 00:52:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -1280,7 +1280,7 @@ VALUES
   (
     'RNU-1185-0900-2H', 'Weissnat, Bernhard and Kuhlman', 
     '54-411-1467', 'Chocolate_Vanilla', 
-    'Trunk', 46, '2021-12-18 11:29:00'
+    'Truck', 46, '2021-12-18 11:29:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -1436,7 +1436,7 @@ VALUES
   (
     'ISA-6989-6209-5G', 'Howell Group', 
     '97-594-3740', 'Chocolate_Strawberry', 
-    'Trunk', 18, '2021-11-26 12:14:00'
+    'Truck', 18, '2021-11-26 12:14:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -1448,7 +1448,7 @@ VALUES
   (
     'QFY-8454-1161-GP', 'Glover LLC', 
     '59-044-7580', 'Chocolate_Milk', 
-    'Trunk', 175, '2022-10-20 11:20:00'
+    'Truck', 175, '2022-10-20 11:20:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -1484,7 +1484,7 @@ VALUES
   (
     'RPI-3306-9109-1F', 'Kling Inc', 
     '97-594-3740', 'Chocolate_Cake', 
-    'Trunk', 184, '2022-08-06 17:08:00'
+    'Truck', 184, '2022-08-06 17:08:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -1508,7 +1508,7 @@ VALUES
   (
     'URZ-6826-0299-QO', 'Dibbert, Mitchell and Dooley', 
     '57-347-6202', 'Chocolate_Spread', 
-    'Trunk', 136, '2022-03-27 22:21:00'
+    'Truck', 136, '2022-03-27 22:21:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -1520,7 +1520,7 @@ VALUES
   (
     'QOH-6187-1288-XO', 'Kuhic-Ullrich', 
     '54-411-1467', 'Chocolate_Dark', 
-    'Trunk', 145, '2022-01-09 12:50:00'
+    'Truck', 145, '2022-01-09 12:50:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -1592,7 +1592,7 @@ VALUES
   (
     'GYE-6721-0496-9X', 'Glover LLC', 
     '05-531-1158', 'Chocolate_Dark', 
-    'Trunk', 89, '2022-07-06 00:09:00'
+    'Truck', 89, '2022-07-06 00:09:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -1616,7 +1616,7 @@ VALUES
   (
     'DFK-2284-7808-EH', 'Rippin, Strosin and Champlin', 
     '77-639-8358', 'Chocolate_Cinnamon', 
-    'Trunk', 168, '2021-10-21 23:08:00'
+    'Truck', 168, '2021-10-21 23:08:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -1628,7 +1628,7 @@ VALUES
   (
     'HDA-2109-4247-8R', 'Douglas, Hoppe and Stark', 
     '07-455-6634', 'Chocolate_Strawberry', 
-    'Trunk', 161, '2021-12-26 00:46:00'
+    'Truck', 161, '2021-12-26 00:46:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -1676,7 +1676,7 @@ VALUES
   (
     'PIV-7284-5205-RC', 'Luettgen, Cremin and Bahringer', 
     '77-639-8358', 'Chocolate_Milk', 
-    'Trunk', 128, '2022-10-29 03:01:00'
+    'Truck', 128, '2022-10-29 03:01:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -1724,7 +1724,7 @@ VALUES
   (
     'LFU-4570-1751-4O', 'Greenfelder LLC', 
     '10-491-2446', 'Chocolate_Milk', 
-    'Trunk', 35, '2021-12-12 05:41:00'
+    'Truck', 35, '2021-12-12 05:41:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -1796,7 +1796,7 @@ VALUES
   (
     'YED-4371-0800-Z6', 'Dibbert, Mitchell and Dooley', 
     '07-455-6634', 'Chocolate_Vanilla', 
-    'Trunk', 193, '2022-09-24 13:23:00'
+    'Truck', 193, '2022-09-24 13:23:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -1808,7 +1808,7 @@ VALUES
   (
     'JCQ-8603-0620-0E', 'Greenfelder LLC', 
     '05-531-1158', 'Chocolate_Dark', 
-    'Trunk', 172, '2021-10-21 09:15:00'
+    'Truck', 172, '2021-10-21 09:15:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -1832,7 +1832,7 @@ VALUES
   (
     'GLF-5099-5845-VB', 'Greenfelder LLC', 
     '05-531-1158', 'Chocolate_Cake', 
-    'Trunk', 36, '2022-08-02 01:18:00'
+    'Truck', 36, '2022-08-02 01:18:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -1940,7 +1940,7 @@ VALUES
   (
     'HWL-9685-2681-FO', 'Kuhic-Ullrich', 
     '59-044-7580', 'Chocolate_Cinnamon', 
-    'Trunk', 141, '2022-10-25 21:59:00'
+    'Truck', 141, '2022-10-25 21:59:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -1964,7 +1964,7 @@ VALUES
   (
     'WCN-4636-3127-F5', 'Luettgen, Cremin and Bahringer', 
     '57-347-6202', 'Chocolate_Spread', 
-    'Trunk', 7, '2022-03-06 09:24:00'
+    'Truck', 7, '2022-03-06 09:24:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -2012,7 +2012,7 @@ VALUES
   (
     'IMK-5486-4705-TZ', 'Greenfelder LLC', 
     '54-411-1467', 'Chocolate_Cinnamon', 
-    'Trunk', 50, '2022-06-11 09:28:00'
+    'Truck', 50, '2022-06-11 09:28:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -2084,7 +2084,7 @@ VALUES
   (
     'NRQ-5824-9180-6A', 'Weissnat, Bernhard and Kuhlman', 
     '30-000-1093', 'Chocolate_Cake', 
-    'Trunk', 178, '2022-07-24 04:40:00'
+    'Truck', 178, '2022-07-24 04:40:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -2288,7 +2288,7 @@ VALUES
   (
     'IWW-6546-9240-SH', 'Glover LLC', 
     '07-455-6634', 'Chocolate_Milk', 
-    'Trunk', 87, '2022-10-06 13:38:00'
+    'Truck', 87, '2022-10-06 13:38:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -2360,7 +2360,7 @@ VALUES
   (
     'FOJ-2806-1381-3C', 'Luettgen, Cremin and Bahringer', 
     '97-594-3740', 'Chocolate_Vanilla', 
-    'Trunk', 164, '2022-05-10 11:07:00'
+    'Truck', 164, '2022-05-10 11:07:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -2372,7 +2372,7 @@ VALUES
   (
     'DVZ-4180-4302-5W', 'Greenfelder LLC', 
     '88-043-5868', 'Chocolate_Vanilla', 
-    'Trunk', 59, '2021-11-12 04:21:00'
+    'Truck', 59, '2021-11-12 04:21:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -2384,7 +2384,7 @@ VALUES
   (
     'CHG-3597-8548-HC', 'Douglas, Hoppe and Stark', 
     '07-455-6634', 'Chocolate_Cinnamon', 
-    'Trunk', 168, '2022-07-27 10:06:00'
+    'Truck', 168, '2022-07-27 10:06:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -2396,7 +2396,7 @@ VALUES
   (
     'GZZ-4502-8975-MK', 'Douglas, Hoppe and Stark', 
     '10-491-2446', 'Chocolate_Dark', 
-    'Trunk', 5, '2022-06-29 07:22:00'
+    'Truck', 5, '2022-06-29 07:22:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -2420,7 +2420,7 @@ VALUES
   (
     'ZJT-5073-7661-59', 'Howell Group', 
     '97-594-3740', 'Chocolate_Vanilla', 
-    'Trunk', 128, '2022-02-26 10:35:00'
+    'Truck', 128, '2022-02-26 10:35:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -2432,7 +2432,7 @@ VALUES
   (
     'LPI-2845-7881-68', 'Kuhic-Ullrich', 
     '05-531-1158', 'Chocolate_Strawberry', 
-    'Trunk', 76, '2022-09-03 20:13:00'
+    'Truck', 76, '2022-09-03 20:13:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -2456,7 +2456,7 @@ VALUES
   (
     'UPZ-0687-2896-TE', 'Rippin, Strosin and Champlin', 
     '54-411-1467', 'Chocolate_Almond', 
-    'Trunk', 120, '2022-08-29 08:11:00'
+    'Truck', 120, '2022-08-29 08:11:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -2492,7 +2492,7 @@ VALUES
   (
     'MGW-1831-6039-T6', 'Douglas, Hoppe and Stark', 
     '07-455-6634', 'Chocolate_Strawberry', 
-    'Trunk', 31, '2022-08-04 14:45:00'
+    'Truck', 31, '2022-08-04 14:45:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -2504,7 +2504,7 @@ VALUES
   (
     'NXC-4855-4594-IM', 'Luettgen, Cremin and Bahringer', 
     '05-531-1158', 'Chocolate_Milk', 
-    'Trunk', 100, '2021-10-04 21:05:00'
+    'Truck', 100, '2021-10-04 21:05:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -2528,7 +2528,7 @@ VALUES
   (
     'TDZ-2545-7789-KB', 'Greenfelder LLC', 
     '77-639-8358', 'Chocolate_Spread', 
-    'Trunk', 159, '2021-10-23 00:03:00'
+    'Truck', 159, '2021-10-23 00:03:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -2540,7 +2540,7 @@ VALUES
   (
     'LPG-7454-3487-S0', 'Kuhic-Ullrich', 
     '57-347-6202', 'Chocolate_White', 
-    'Trunk', 81, '2022-03-31 14:20:00'
+    'Truck', 81, '2022-03-31 14:20:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -2564,7 +2564,7 @@ VALUES
   (
     'YWO-1671-6045-KU', 'Rippin, Strosin and Champlin', 
     '30-000-1093', 'Chocolate_Milk', 
-    'Trunk', 145, '2022-04-26 10:03:00'
+    'Truck', 145, '2022-04-26 10:03:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -2612,7 +2612,7 @@ VALUES
   (
     'NZC-8836-1074-DA', 'Rippin, Strosin and Champlin', 
     '59-044-7580', 'Chocolate_Dark', 
-    'Trunk', 83, '2022-09-04 11:54:00'
+    'Truck', 83, '2022-09-04 11:54:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -2660,7 +2660,7 @@ VALUES
   (
     'BOE-1726-1396-08', 'Kling Inc', 
     '57-347-6202', 'Chocolate_Strawberry', 
-    'Trunk', 120, '2022-01-09 23:43:00'
+    'Truck', 120, '2022-01-09 23:43:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -2672,7 +2672,7 @@ VALUES
   (
     'TOG-1134-1801-2A', 'Douglas, Hoppe and Stark', 
     '54-411-1467', 'Chocolate_Vanilla', 
-    'Trunk', 59, '2022-10-22 21:45:00'
+    'Truck', 59, '2022-10-22 21:45:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -2684,7 +2684,7 @@ VALUES
   (
     'APF-8166-8591-KB', 'Glover LLC', 
     '57-347-6202', 'Chocolate_Milk', 
-    'Trunk', 147, '2022-09-14 11:47:00'
+    'Truck', 147, '2022-09-14 11:47:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -2696,7 +2696,7 @@ VALUES
   (
     'ZVS-9200-6771-7L', 'Weissnat, Bernhard and Kuhlman', 
     '97-594-3740', 'Chocolate_Cake', 
-    'Trunk', 132, '2022-06-01 11:25:00'
+    'Truck', 132, '2022-06-01 11:25:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -2708,7 +2708,7 @@ VALUES
   (
     'CPT-8748-2914-Y5', 'Weissnat, Bernhard and Kuhlman', 
     '77-639-8358', 'Chocolate_Strawberry', 
-    'Trunk', 101, '2022-09-21 11:20:00'
+    'Truck', 101, '2022-09-21 11:20:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -2732,7 +2732,7 @@ VALUES
   (
     'MSV-3895-4729-Q4', 'Kuhic-Ullrich', 
     '88-043-5868', 'Chocolate_Cinnamon', 
-    'Trunk', 99, '2022-02-09 14:12:00'
+    'Truck', 99, '2022-02-09 14:12:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -2804,7 +2804,7 @@ VALUES
   (
     'NPC-0330-7898-GB', 'Glover LLC', 
     '59-044-7580', 'Chocolate_Cake', 
-    'Trunk', 82, '2022-07-20 06:33:00'
+    'Truck', 82, '2022-07-20 06:33:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -2816,7 +2816,7 @@ VALUES
   (
     'BLG-3984-6765-FQ', 'Dibbert, Mitchell and Dooley', 
     '97-594-3740', 'Chocolate_Dark', 
-    'Trunk', 70, '2022-09-24 23:52:00'
+    'Truck', 70, '2022-09-24 23:52:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -2828,7 +2828,7 @@ VALUES
   (
     'KYN-8981-2678-TH', 'Howell Group', 
     '07-455-6634', 'Chocolate_Spread', 
-    'Trunk', 122, '2021-12-30 09:36:00'
+    'Truck', 122, '2021-12-30 09:36:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -2840,7 +2840,7 @@ VALUES
   (
     'YYJ-3564-7242-M1', 'Rippin, Strosin and Champlin', 
     '30-000-1093', 'Chocolate_White', 
-    'Trunk', 79, '2022-05-24 04:24:00'
+    'Truck', 79, '2022-05-24 04:24:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -2852,7 +2852,7 @@ VALUES
   (
     'XMV-4207-3030-15', 'Dibbert, Mitchell and Dooley', 
     '05-531-1158', 'Chocolate_Milk', 
-    'Trunk', 91, '2021-12-12 07:43:00'
+    'Truck', 91, '2021-12-12 07:43:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -2888,7 +2888,7 @@ VALUES
   (
     'RAE-9086-7698-WY', 'Kuhic-Ullrich', 
     '97-594-3740', 'Chocolate_Cake', 
-    'Trunk', 178, '2022-06-25 03:36:00'
+    'Truck', 178, '2022-06-25 03:36:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -2924,7 +2924,7 @@ VALUES
   (
     'TKL-0401-3197-AJ', 'Kuhic-Ullrich', 
     '05-531-1158', 'Chocolate_Strawberry', 
-    'Trunk', 99, '2022-02-25 23:23:00'
+    'Truck', 99, '2022-02-25 23:23:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -3020,7 +3020,7 @@ VALUES
   (
     'FWF-9570-5234-JT', 'Kling Inc', 
     '30-000-1093', 'Chocolate_Almond', 
-    'Trunk', 41, '2022-05-13 18:07:00'
+    'Truck', 41, '2022-05-13 18:07:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -3212,7 +3212,7 @@ VALUES
   (
     'BTB-6705-4769-6E', 'Rippin, Strosin and Champlin', 
     '30-000-1093', 'Chocolate_Almond', 
-    'Trunk', 120, '2022-06-06 14:41:00'
+    'Truck', 120, '2022-06-06 14:41:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -3224,7 +3224,7 @@ VALUES
   (
     'TXD-7833-6621-6F', 'Howell Group', 
     '10-491-2446', 'Chocolate_Strawberry', 
-    'Trunk', 117, '2022-10-24 18:06:00'
+    'Truck', 117, '2022-10-24 18:06:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -3248,7 +3248,7 @@ VALUES
   (
     'WIT-5112-9104-CP', 'Glover LLC', 
     '59-044-7580', 'Chocolate_Vanilla', 
-    'Trunk', 187, '2022-02-21 15:55:00'
+    'Truck', 187, '2022-02-21 15:55:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -3284,7 +3284,7 @@ VALUES
   (
     'UWY-8908-2193-VE', 'Howell Group', 
     '30-000-1093', 'Chocolate_Spread', 
-    'Trunk', 124, '2022-08-01 08:52:00'
+    'Truck', 124, '2022-08-01 08:52:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -3404,7 +3404,7 @@ VALUES
   (
     'XIJ-4929-3016-NB', 'Howell Group', 
     '97-594-3740', 'Chocolate_Vanilla', 
-    'Trunk', 191, '2022-02-25 05:13:00'
+    'Truck', 191, '2022-02-25 05:13:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -3416,7 +3416,7 @@ VALUES
   (
     'UVJ-5497-9619-IR', 'Rippin, Strosin and Champlin', 
     '07-455-6634', 'Chocolate_Cake', 
-    'Trunk', 46, '2022-03-04 10:47:00'
+    'Truck', 46, '2022-03-04 10:47:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -3440,7 +3440,7 @@ VALUES
   (
     'VWZ-2065-9092-AD', 'Douglas, Hoppe and Stark', 
     '77-639-8358', 'Chocolate_Cake', 
-    'Trunk', 129, '2022-01-12 09:50:00'
+    'Truck', 129, '2022-01-12 09:50:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -3560,7 +3560,7 @@ VALUES
   (
     'UUE-1583-0466-38', 'Douglas, Hoppe and Stark', 
     '77-639-8358', 'Chocolate_Cinnamon', 
-    'Trunk', 37, '2021-10-12 12:43:00'
+    'Truck', 37, '2021-10-12 12:43:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -3572,7 +3572,7 @@ VALUES
   (
     'YST-5007-6374-X1', 'Dibbert, Mitchell and Dooley', 
     '57-347-6202', 'Chocolate_Spread', 
-    'Trunk', 7, '2022-03-23 21:41:00'
+    'Truck', 7, '2022-03-23 21:41:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -3644,7 +3644,7 @@ VALUES
   (
     'UUO-5335-1561-06', 'Kuhic-Ullrich', 
     '30-000-1093', 'Chocolate_Strawberry', 
-    'Trunk', 43, '2022-06-22 12:58:00'
+    'Truck', 43, '2022-06-22 12:58:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -3704,7 +3704,7 @@ VALUES
   (
     'WIR-6609-1292-9X', 'Douglas, Hoppe and Stark', 
     '97-594-3740', 'Chocolate_Almond', 
-    'Trunk', 192, '2021-11-01 08:08:00'
+    'Truck', 192, '2021-11-01 08:08:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -3716,7 +3716,7 @@ VALUES
   (
     'QZU-4129-0570-S1', 'Kuhic-Ullrich', 
     '54-411-1467', 'Chocolate_Cinnamon', 
-    'Trunk', 120, '2021-10-09 22:15:00'
+    'Truck', 120, '2021-10-09 22:15:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -3728,7 +3728,7 @@ VALUES
   (
     'LRQ-4555-8475-KB', 'Glover LLC', 
     '57-347-6202', 'Chocolate_Milk', 
-    'Trunk', 56, '2021-11-10 10:24:00'
+    'Truck', 56, '2021-11-10 10:24:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -3752,7 +3752,7 @@ VALUES
   (
     'IQX-1281-7465-T9', 'Glover LLC', 
     '30-000-1093', 'Chocolate_Cinnamon', 
-    'Trunk', 97, '2022-01-21 10:43:00'
+    'Truck', 97, '2022-01-21 10:43:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -3764,7 +3764,7 @@ VALUES
   (
     'OWA-4991-7827-0V', 'Kuhic-Ullrich', 
     '59-044-7580', 'Chocolate_Vanilla', 
-    'Trunk', 200, '2022-10-10 12:57:00'
+    'Truck', 200, '2022-10-10 12:57:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -3824,7 +3824,7 @@ VALUES
   (
     'KYS-5743-6837-3H', 'Dibbert, Mitchell and Dooley', 
     '77-639-8358', 'Chocolate_Vanilla', 
-    'Trunk', 32, '2022-04-11 10:20:00'
+    'Truck', 32, '2022-04-11 10:20:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -3860,7 +3860,7 @@ VALUES
   (
     'IVC-6220-0233-X6', 'Glover LLC', 
     '97-594-3740', 'Chocolate_Almond', 
-    'Trunk', 174, '2022-06-16 10:35:00'
+    'Truck', 174, '2022-06-16 10:35:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -3884,7 +3884,7 @@ VALUES
   (
     'ONX-8584-9541-8G', 'Howell Group', 
     '77-639-8358', 'Chocolate_Spread', 
-    'Trunk', 181, '2022-02-13 16:03:00'
+    'Truck', 181, '2022-02-13 16:03:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -3956,7 +3956,7 @@ VALUES
   (
     'UJU-8061-6853-UU', 'Dibbert, Mitchell and Dooley', 
     '77-639-8358', 'Chocolate_Almond', 
-    'Trunk', 129, '2022-07-06 22:55:00'
+    'Truck', 129, '2022-07-06 22:55:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -4016,7 +4016,7 @@ VALUES
   (
     'JTY-7652-2551-KQ', 'Howell Group', 
     '77-639-8358', 'Chocolate_Dark', 
-    'Trunk', 109, '2022-08-01 10:27:00'
+    'Truck', 109, '2022-08-01 10:27:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -4064,7 +4064,7 @@ VALUES
   (
     'FOB-4501-3272-5Z', 'Kuhic-Ullrich', 
     '07-455-6634', 'Chocolate_White', 
-    'Trunk', 132, '2022-01-24 07:53:00'
+    'Truck', 132, '2022-01-24 07:53:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -4076,7 +4076,7 @@ VALUES
   (
     'QTW-0729-2909-O4', 'Weissnat, Bernhard and Kuhlman', 
     '97-594-3740', 'Chocolate_Dark', 
-    'Trunk', 97, '2022-07-13 12:48:00'
+    'Truck', 97, '2022-07-13 12:48:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -4112,7 +4112,7 @@ VALUES
   (
     'XVD-8460-4669-4R', 'Howell Group', 
     '88-043-5868', 'Chocolate_White', 
-    'Trunk', 8, '2021-10-16 07:23:00'
+    'Truck', 8, '2021-10-16 07:23:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -4184,7 +4184,7 @@ VALUES
   (
     'OQD-1585-6641-0Z', 'Dibbert, Mitchell and Dooley', 
     '30-000-1093', 'Chocolate_White', 
-    'Trunk', 104, '2022-08-29 11:14:00'
+    'Truck', 104, '2022-08-29 11:14:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -4208,7 +4208,7 @@ VALUES
   (
     'QNN-7843-4279-4L', 'Kling Inc', 
     '77-639-8358', 'Chocolate_Strawberry', 
-    'Trunk', 75, '2022-02-23 03:32:00'
+    'Truck', 75, '2022-02-23 03:32:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -4268,7 +4268,7 @@ VALUES
   (
     'RYY-8437-9118-PG', 'Howell Group', 
     '54-411-1467', 'Chocolate_Spread', 
-    'Trunk', 26, '2022-08-12 04:35:00'
+    'Truck', 26, '2022-08-12 04:35:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -4316,7 +4316,7 @@ VALUES
   (
     'NCG-2526-8437-YK', 'Greenfelder LLC', 
     '30-000-1093', 'Chocolate_Milk', 
-    'Trunk', 48, '2022-01-03 17:00:00'
+    'Truck', 48, '2022-01-03 17:00:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -4364,7 +4364,7 @@ VALUES
   (
     'NFC-5942-4125-1G', 'Glover LLC', 
     '10-491-2446', 'Chocolate_Dark', 
-    'Trunk', 27, '2022-02-21 22:56:00'
+    'Truck', 27, '2022-02-21 22:56:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -4460,7 +4460,7 @@ VALUES
   (
     'SSK-3092-6933-4T', 'Glover LLC', 
     '59-044-7580', 'Chocolate_Cake', 
-    'Trunk', 67, '2022-06-30 15:45:00'
+    'Truck', 67, '2022-06-30 15:45:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -4472,7 +4472,7 @@ VALUES
   (
     'QNR-4099-9686-UU', 'Weissnat, Bernhard and Kuhlman', 
     '05-531-1158', 'Chocolate_Strawberry', 
-    'Trunk', 96, '2022-09-12 11:48:00'
+    'Truck', 96, '2022-09-12 11:48:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -4496,7 +4496,7 @@ VALUES
   (
     'VCA-0570-5833-06', 'Kling Inc', 
     '77-639-8358', 'Chocolate_Milk', 
-    'Trunk', 21, '2022-05-01 18:35:00'
+    'Truck', 21, '2022-05-01 18:35:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -4604,7 +4604,7 @@ VALUES
   (
     'TVF-3979-5007-PC', 'Luettgen, Cremin and Bahringer', 
     '88-043-5868', 'Chocolate_Dark', 
-    'Trunk', 93, '2021-12-24 01:38:00'
+    'Truck', 93, '2021-12-24 01:38:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -4664,7 +4664,7 @@ VALUES
   (
     'ZTM-9294-2058-X7', 'Dibbert, Mitchell and Dooley', 
     '77-639-8358', 'Chocolate_Vanilla', 
-    'Trunk', 38, '2021-12-22 08:03:00'
+    'Truck', 38, '2021-12-22 08:03:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -4712,7 +4712,7 @@ VALUES
   (
     'XOA-2372-3114-E4', 'Luettgen, Cremin and Bahringer', 
     '77-639-8358', 'Chocolate_Cake', 
-    'Trunk', 69, '2022-08-11 22:38:00'
+    'Truck', 69, '2022-08-11 22:38:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -4736,7 +4736,7 @@ VALUES
   (
     'KFA-4482-8316-LD', 'Douglas, Hoppe and Stark', 
     '30-000-1093', 'Chocolate_Spread', 
-    'Trunk', 49, '2022-01-23 17:55:00'
+    'Truck', 49, '2022-01-23 17:55:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -4760,7 +4760,7 @@ VALUES
   (
     'YPE-6190-3657-HQ', 'Douglas, Hoppe and Stark', 
     '97-594-3740', 'Chocolate_Almond', 
-    'Trunk', 131, '2022-08-02 10:38:00'
+    'Truck', 131, '2022-08-02 10:38:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -4844,7 +4844,7 @@ VALUES
   (
     'TDI-8553-7054-76', 'Kuhic-Ullrich', 
     '57-347-6202', 'Chocolate_Cake', 
-    'Trunk', 198, '2022-05-10 09:38:00'
+    'Truck', 198, '2022-05-10 09:38:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -4856,7 +4856,7 @@ VALUES
   (
     'LBW-9389-0836-GM', 'Weissnat, Bernhard and Kuhlman', 
     '97-594-3740', 'Chocolate_Milk', 
-    'Trunk', 27, '2021-10-12 00:57:00'
+    'Truck', 27, '2021-10-12 00:57:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -4904,7 +4904,7 @@ VALUES
   (
     'QVL-9193-8208-70', 'Dibbert, Mitchell and Dooley', 
     '54-411-1467', 'Chocolate_Milk', 
-    'Trunk', 91, '2022-05-20 07:03:00'
+    'Truck', 91, '2022-05-20 07:03:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -5228,7 +5228,7 @@ VALUES
   (
     'EJS-9550-7665-7M', 'Weissnat, Bernhard and Kuhlman', 
     '05-531-1158', 'Chocolate_Almond', 
-    'Trunk', 189, '2022-06-16 00:35:00'
+    'Truck', 189, '2022-06-16 00:35:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -5240,7 +5240,7 @@ VALUES
   (
     'HJJ-7935-1355-M2', 'Greenfelder LLC', 
     '59-044-7580', 'Chocolate_Dark', 
-    'Trunk', 112, '2022-09-23 20:06:00'
+    'Truck', 112, '2022-09-23 20:06:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -5324,7 +5324,7 @@ VALUES
   (
     'FDB-4734-5992-D6', 'Rippin, Strosin and Champlin', 
     '59-044-7580', 'Chocolate_Cinnamon', 
-    'Trunk', 133, '2022-08-27 17:10:00'
+    'Truck', 133, '2022-08-27 17:10:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -5336,7 +5336,7 @@ VALUES
   (
     'CUZ-1234-4827-FP', 'Douglas, Hoppe and Stark', 
     '59-044-7580', 'Chocolate_Vanilla', 
-    'Trunk', 148, '2021-12-10 20:10:00'
+    'Truck', 148, '2021-12-10 20:10:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -5348,7 +5348,7 @@ VALUES
   (
     'NCB-7345-7429-EO', 'Douglas, Hoppe and Stark', 
     '10-491-2446', 'Chocolate_White', 
-    'Trunk', 88, '2022-01-29 11:57:00'
+    'Truck', 88, '2022-01-29 11:57:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -5408,7 +5408,7 @@ VALUES
   (
     'ILR-4357-0094-RA', 'Howell Group', 
     '30-000-1093', 'Chocolate_Cinnamon', 
-    'Trunk', 82, '2021-11-02 11:30:00'
+    'Truck', 82, '2021-11-02 11:30:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -5432,7 +5432,7 @@ VALUES
   (
     'IRU-6146-5668-4O', 'Weissnat, Bernhard and Kuhlman', 
     '10-491-2446', 'Chocolate_Milk', 
-    'Trunk', 102, '2022-08-10 05:51:00'
+    'Truck', 102, '2022-08-10 05:51:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -5444,7 +5444,7 @@ VALUES
   (
     'BKI-9611-9448-KN', 'Kuhic-Ullrich', 
     '07-455-6634', 'Chocolate_White', 
-    'Trunk', 34, '2022-08-18 00:11:00'
+    'Truck', 34, '2022-08-18 00:11:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -5456,7 +5456,7 @@ VALUES
   (
     'ZZU-5115-3347-SV', 'Greenfelder LLC', 
     '07-455-6634', 'Chocolate_Almond', 
-    'Trunk', 197, '2022-02-07 19:18:00'
+    'Truck', 197, '2022-02-07 19:18:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -5480,7 +5480,7 @@ VALUES
   (
     'BZZ-6078-1013-SZ', 'Douglas, Hoppe and Stark', 
     '30-000-1093', 'Chocolate_Milk', 
-    'Trunk', 89, '2022-01-25 06:06:00'
+    'Truck', 89, '2022-01-25 06:06:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -5492,7 +5492,7 @@ VALUES
   (
     'GFF-6626-1471-OD', 'Douglas, Hoppe and Stark', 
     '57-347-6202', 'Chocolate_White', 
-    'Trunk', 172, '2022-01-06 04:17:00'
+    'Truck', 172, '2022-01-06 04:17:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -5564,7 +5564,7 @@ VALUES
   (
     'GHK-4347-3153-X3', 'Howell Group', 
     '07-455-6634', 'Chocolate_Cake', 
-    'Trunk', 146, '2022-03-18 21:59:00'
+    'Truck', 146, '2022-03-18 21:59:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -5576,7 +5576,7 @@ VALUES
   (
     'ZZO-4177-2974-8P', 'Kuhic-Ullrich', 
     '59-044-7580', 'Chocolate_Spread', 
-    'Trunk', 79, '2022-01-18 19:29:00'
+    'Truck', 79, '2022-01-18 19:29:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -5588,7 +5588,7 @@ VALUES
   (
     'WLY-8097-6375-RR', 'Kling Inc', 
     '57-347-6202', 'Chocolate_White', 
-    'Trunk', 14, '2021-12-06 12:19:00'
+    'Truck', 14, '2021-12-06 12:19:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -5612,7 +5612,7 @@ VALUES
   (
     'FOR-9357-5518-9N', 'Kling Inc', 
     '10-491-2446', 'Chocolate_White', 
-    'Trunk', 162, '2022-04-26 23:15:00'
+    'Truck', 162, '2022-04-26 23:15:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -5660,7 +5660,7 @@ VALUES
   (
     'JAR-5359-5638-H3', 'Douglas, Hoppe and Stark', 
     '97-594-3740', 'Chocolate_Spread', 
-    'Trunk', 98, '2022-04-13 02:46:00'
+    'Truck', 98, '2022-04-13 02:46:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -5672,7 +5672,7 @@ VALUES
   (
     'KRW-3120-1406-TW', 'Dibbert, Mitchell and Dooley', 
     '97-594-3740', 'Chocolate_Dark', 
-    'Trunk', 18, '2021-11-16 17:36:00'
+    'Truck', 18, '2021-11-16 17:36:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -5696,7 +5696,7 @@ VALUES
   (
     'AVE-5598-2314-34', 'Greenfelder LLC', 
     '97-594-3740', 'Chocolate_Almond', 
-    'Trunk', 114, '2022-05-12 06:51:00'
+    'Truck', 114, '2022-05-12 06:51:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -5708,7 +5708,7 @@ VALUES
   (
     'RCO-0542-8486-12', 'Howell Group', 
     '97-594-3740', 'Chocolate_Cinnamon', 
-    'Trunk', 49, '2022-08-02 14:50:00'
+    'Truck', 49, '2022-08-02 14:50:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -5840,7 +5840,7 @@ VALUES
   (
     'QWQ-8225-9079-Y6', 'Rippin, Strosin and Champlin', 
     '77-639-8358', 'Chocolate_Vanilla', 
-    'Trunk', 77, '2021-11-29 05:14:00'
+    'Truck', 77, '2021-11-29 05:14:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -5876,7 +5876,7 @@ VALUES
   (
     'YOO-0604-4428-3D', 'Rippin, Strosin and Champlin', 
     '57-347-6202', 'Chocolate_Vanilla', 
-    'Trunk', 48, '2021-10-19 22:28:00'
+    'Truck', 48, '2021-10-19 22:28:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -6020,7 +6020,7 @@ VALUES
   (
     'APG-7328-4757-CV', 'Kuhic-Ullrich', 
     '59-044-7580', 'Chocolate_Cake', 
-    'Trunk', 181, '2022-01-26 22:04:00'
+    'Truck', 181, '2022-01-26 22:04:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -6068,7 +6068,7 @@ VALUES
   (
     'EDJ-4296-4257-D0', 'Greenfelder LLC', 
     '97-594-3740', 'Chocolate_Strawberry', 
-    'Trunk', 7, '2022-03-04 01:29:00'
+    'Truck', 7, '2022-03-04 01:29:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -6176,7 +6176,7 @@ VALUES
   (
     'NSO-6392-3496-TD', 'Weissnat, Bernhard and Kuhlman', 
     '97-594-3740', 'Chocolate_Dark', 
-    'Trunk', 73, '2022-05-06 19:49:00'
+    'Truck', 73, '2022-05-06 19:49:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -6200,7 +6200,7 @@ VALUES
   (
     'XNY-5655-5424-ZO', 'Dibbert, Mitchell and Dooley', 
     '88-043-5868', 'Chocolate_Strawberry', 
-    'Trunk', 38, '2022-10-06 23:39:00'
+    'Truck', 38, '2022-10-06 23:39:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -6224,7 +6224,7 @@ VALUES
   (
     'MEQ-9664-6184-N4', 'Greenfelder LLC', 
     '05-531-1158', 'Chocolate_Cinnamon', 
-    'Trunk', 160, '2022-10-09 02:49:00'
+    'Truck', 160, '2022-10-09 02:49:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -6248,7 +6248,7 @@ VALUES
   (
     'WSI-7722-0452-1S', 'Weissnat, Bernhard and Kuhlman', 
     '30-000-1093', 'Chocolate_Cake', 
-    'Trunk', 56, '2022-09-17 18:39:00'
+    'Truck', 56, '2022-09-17 18:39:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -6332,7 +6332,7 @@ VALUES
   (
     'FKZ-1826-3143-C8', 'Greenfelder LLC', 
     '59-044-7580', 'Chocolate_Strawberry', 
-    'Trunk', 27, '2021-12-01 01:06:00'
+    'Truck', 27, '2021-12-01 01:06:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -6416,7 +6416,7 @@ VALUES
   (
     'VNL-7607-2641-QA', 'Greenfelder LLC', 
     '97-594-3740', 'Chocolate_Vanilla', 
-    'Trunk', 169, '2022-03-18 14:13:00'
+    'Truck', 169, '2022-03-18 14:13:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -6452,7 +6452,7 @@ VALUES
   (
     'RFF-0840-4366-N6', 'Luettgen, Cremin and Bahringer', 
     '97-594-3740', 'Chocolate_Vanilla', 
-    'Trunk', 11, '2022-03-07 04:56:00'
+    'Truck', 11, '2022-03-07 04:56:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -6512,7 +6512,7 @@ VALUES
   (
     'VDC-3177-0648-GJ', 'Dibbert, Mitchell and Dooley', 
     '77-639-8358', 'Chocolate_Cake', 
-    'Trunk', 101, '2021-10-04 22:53:00'
+    'Truck', 101, '2021-10-04 22:53:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -6524,7 +6524,7 @@ VALUES
   (
     'OVO-9935-1282-ZM', 'Howell Group', 
     '77-639-8358', 'Chocolate_White', 
-    'Trunk', 178, '2022-10-08 11:32:00'
+    'Truck', 178, '2022-10-08 11:32:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -6572,7 +6572,7 @@ VALUES
   (
     'WDR-3694-3551-2P', 'Luettgen, Cremin and Bahringer', 
     '57-347-6202', 'Chocolate_Vanilla', 
-    'Trunk', 143, '2022-07-19 22:04:00'
+    'Truck', 143, '2022-07-19 22:04:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -6692,7 +6692,7 @@ VALUES
   (
     'UXJ-8035-9581-I9', 'Greenfelder LLC', 
     '30-000-1093', 'Chocolate_Vanilla', 
-    'Trunk', 107, '2022-01-27 12:22:00'
+    'Truck', 107, '2022-01-27 12:22:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -6704,7 +6704,7 @@ VALUES
   (
     'QWY-3904-0527-BS', 'Howell Group', 
     '30-000-1093', 'Chocolate_Almond', 
-    'Trunk', 55, '2022-04-27 18:41:00'
+    'Truck', 55, '2022-04-27 18:41:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -6740,7 +6740,7 @@ VALUES
   (
     'NZG-2405-9647-FY', 'Glover LLC', 
     '10-491-2446', 'Chocolate_Milk', 
-    'Trunk', 30, '2022-05-03 22:07:00'
+    'Truck', 30, '2022-05-03 22:07:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -6776,7 +6776,7 @@ VALUES
   (
     'GQF-5424-7537-TI', 'Weissnat, Bernhard and Kuhlman', 
     '07-455-6634', 'Chocolate_Almond', 
-    'Trunk', 32, '2022-05-03 18:10:00'
+    'Truck', 32, '2022-05-03 18:10:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -6812,7 +6812,7 @@ VALUES
   (
     'JIE-1803-7376-2P', 'Luettgen, Cremin and Bahringer', 
     '10-491-2446', 'Chocolate_Strawberry', 
-    'Trunk', 175, '2022-07-12 22:38:00'
+    'Truck', 175, '2022-07-12 22:38:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -6836,7 +6836,7 @@ VALUES
   (
     'DJA-6323-4710-KQ', 'Glover LLC', 
     '07-455-6634', 'Chocolate_Almond', 
-    'Trunk', 131, '2021-11-11 11:20:00'
+    'Truck', 131, '2021-11-11 11:20:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -6884,7 +6884,7 @@ VALUES
   (
     'GEZ-2454-3670-2H', 'Kling Inc', 
     '88-043-5868', 'Chocolate_Milk', 
-    'Trunk', 153, '2022-09-23 10:17:00'
+    'Truck', 153, '2022-09-23 10:17:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -6896,7 +6896,7 @@ VALUES
   (
     'IFN-9478-8157-V8', 'Douglas, Hoppe and Stark', 
     '97-594-3740', 'Chocolate_Vanilla', 
-    'Trunk', 3, '2022-03-20 12:10:00'
+    'Truck', 3, '2022-03-20 12:10:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -6920,7 +6920,7 @@ VALUES
   (
     'XBP-7478-7417-J3', 'Howell Group', 
     '05-531-1158', 'Chocolate_Vanilla', 
-    'Trunk', 13, '2021-12-04 16:28:00'
+    'Truck', 13, '2021-12-04 16:28:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -6944,7 +6944,7 @@ VALUES
   (
     'AAN-4205-2254-V9', 'Howell Group', 
     '57-347-6202', 'Chocolate_Spread', 
-    'Trunk', 78, '2022-10-10 11:05:00'
+    'Truck', 78, '2022-10-10 11:05:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -6956,7 +6956,7 @@ VALUES
   (
     'ZCD-8904-4072-PB', 'Luettgen, Cremin and Bahringer', 
     '30-000-1093', 'Chocolate_Dark', 
-    'Trunk', 196, '2022-02-20 01:07:00'
+    'Truck', 196, '2022-02-20 01:07:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -6980,7 +6980,7 @@ VALUES
   (
     'SRM-8315-2612-MU', 'Greenfelder LLC', 
     '57-347-6202', 'Chocolate_Strawberry', 
-    'Trunk', 107, '2021-10-14 04:53:00'
+    'Truck', 107, '2021-10-14 04:53:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -6992,7 +6992,7 @@ VALUES
   (
     'JOC-0938-0177-YP', 'Douglas, Hoppe and Stark', 
     '05-531-1158', 'Chocolate_Cake', 
-    'Trunk', 12, '2022-03-18 14:55:00'
+    'Truck', 12, '2022-03-18 14:55:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -7004,7 +7004,7 @@ VALUES
   (
     'UAN-5153-1784-8F', 'Luettgen, Cremin and Bahringer', 
     '54-411-1467', 'Chocolate_White', 
-    'Trunk', 155, '2022-04-23 11:24:00'
+    'Truck', 155, '2022-04-23 11:24:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -7052,7 +7052,7 @@ VALUES
   (
     'ZAV-6639-1245-IN', 'Greenfelder LLC', 
     '54-411-1467', 'Chocolate_Spread', 
-    'Trunk', 58, '2021-10-20 20:41:00'
+    'Truck', 58, '2021-10-20 20:41:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -7088,7 +7088,7 @@ VALUES
   (
     'QZR-9591-5225-KQ', 'Kling Inc', 
     '77-639-8358', 'Chocolate_White', 
-    'Trunk', 42, '2022-07-29 21:29:00'
+    'Truck', 42, '2022-07-29 21:29:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -7136,7 +7136,7 @@ VALUES
   (
     'NXH-7859-0900-O6', 'Luettgen, Cremin and Bahringer', 
     '88-043-5868', 'Chocolate_Cinnamon', 
-    'Trunk', 141, '2022-03-13 23:27:00'
+    'Truck', 141, '2022-03-13 23:27:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -7280,7 +7280,7 @@ VALUES
   (
     'SEQ-7458-5435-6H', 'Greenfelder LLC', 
     '97-594-3740', 'Chocolate_Spread', 
-    'Trunk', 133, '2022-02-21 09:30:00'
+    'Truck', 133, '2022-02-21 09:30:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -7376,7 +7376,7 @@ VALUES
   (
     'FHC-5589-0010-O1', 'Luettgen, Cremin and Bahringer', 
     '05-531-1158', 'Chocolate_Milk', 
-    'Trunk', 97, '2022-03-12 10:32:00'
+    'Truck', 97, '2022-03-12 10:32:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(
@@ -7388,7 +7388,7 @@ VALUES
   (
     'PAF-1887-5330-6C', 'Greenfelder LLC', 
     '59-044-7580', 'Chocolate_Almond', 
-    'Trunk', 126, '2022-09-18 15:41:00'
+    'Truck', 126, '2022-09-18 15:41:00'
   );
 /* INSERT QUERY */
 INSERT INTO order_info(

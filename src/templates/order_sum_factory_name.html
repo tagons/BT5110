@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>OrderSumInsight</title>
+    <title>Order Sum on Factory Name</title>
 
     <link href="../static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../static/bootstrap/css/bootstrap-theme.min.css">
     <script src="../static/bootstrap/js/bootstrap.min.js"></script>
     <script src="../static/js/jquery-3.5.1/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.xkcd@1.1/dist/chart.xkcd.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
     <style type="text/css">
       #us {
@@ -122,45 +123,88 @@
     </div>
     <div class="ps">
       <div class="out">
-        <div class="left c_div">
-          <h1>ROLLUP Function</h1>
+        <div class="left c_div" , style="flex: 1; width: 300px;">
+          <h1>Product quantity per Factory Name</h1>
           <table>
             <tr>
+              <th>Factory Name</th>
               <th>Sum</th>
-              <th>Product Name</th>
-              <th>Buyer Id</th>
             </tr>
-            {% for i in rollup%}
+            {% for i in output%}
             <tr>
-              <td>{{i.sum}}</td>
-              <td>{{i.product_name}}</td>
-              <td>{{i.buyer_id}}</td>
+              <td name="fd1">{{i.factory_name}}</td>
+              <td name="fd2">{{i.sum}}</td>
             </tr>
             {% endfor %}
           </table>
-        </div>
-        <div class="right c_div">
-          <h1>CUBE Function</h1>
-          <table>
-            <tr>
-              <th>Sum</th>
-              <th>Product Name</th>
-              <th>Buyer Id</th>
-            </tr>
-            {% for i in cube%}
-            <tr>
-              <td>{{i.sum}}</td>
-              <td>{{i.product_name}}</td>
-              <td>{{i.buyer_id}}</td>
-            </tr>
-            {% endfor %}
-          </table>
+
+
+
+
         </div>
 
+        <div class="right c_div" style="width: 820px;">
+          <h1>Charts of data above</h1>
+          <div id="937268f03e00474c870ab7c0bb6371d3" class="chart-container" style="width: 800px;">
+            <svg id="chart_937268f03e00474c870ab7c0bb6371d3"></svg>
+          </div>
+
+          <div id="d8b4710b07964e4586da964c31851f1a" class="chart-container" style="width: 800px;">
+            <svg id="chart_d8b4710b07964e4586da964c31851f1a"></svg>
+          </div>
+
+          <script>
+
+            var getfd1 = document.getElementsByName('fd1');
+            var getfd2 = document.getElementsByName('fd2');
+            var fd1 = [];
+            var fd2 = [];
+            for (var i = 0; i < getfd1.length; i++) {
+              fd1.push(getfd1[i].innerText);
+              fd2.push(getfd2[i].innerText);
+            }
+            var labels = fd1;
+            var datasets = [];
+            for (var i = 0; i < getfd2.length; i++) { datasets.push(Number(fd2[i])) }
+
+            const svg_937268f03e00474c870ab7c0bb6371d3 = document.querySelector('#chart_937268f03e00474c870ab7c0bb6371d3')
+            const chart_937268f03e00474c870ab7c0bb6371d3 = new chartXkcd.Pie(svg_937268f03e00474c870ab7c0bb6371d3,
+              {
+                "title": "rollup Pie Chart", "data":
+                {
+                  "datasets": [{
+                    "label": "product quantity",
+                    "data": datasets
+                  }],
+                  "labels": labels
+                }, "options": { "innerRadius": 0.5, "legendPosition": 1 }
+              });
+
+
+
+            const svg_d8b4710b07964e4586da964c31851f1a = document.querySelector('#chart_d8b4710b07964e4586da964c31851f1a')
+            const chart_d8b4710b07964e4586da964c31851f1a = new chartXkcd.Radar(svg_d8b4710b07964e4586da964c31851f1a,
+              {
+                "title": "rollup Radar Chart", "data":
+                {
+                  "datasets": [{
+                    "label": "product quantity",
+                    "data": datasets
+                  }],
+                  "labels": labels
+                }, "options": { "showLegend": true, "showLabel": true, "tickCount": 3, "legendPosition": 1 }
+              });
+
+
+          </script>
+
+        </div>
+
+
+
       </div>
-    </div>
-    <script>
-    </script>
+      <script>
+      </script>
   </body>
 
 </html>

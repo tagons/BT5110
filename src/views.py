@@ -10,6 +10,7 @@ from src import app
 
 models = Models()
 
+
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -33,7 +34,8 @@ def add_reader():
         if session['user_available']:
             reader = AddReaderForm(request.form)
             if request.method == 'POST':
-                models.addAssignment({"email": reader.email.data, "isbn": reader.isbn.data})
+                models.addAssignment(
+                    {"email": reader.email.data, "isbn": reader.isbn.data})
                 return redirect(url_for('show_books'))
             return render_template('add.html', reader=reader)
     except Exception as e:
@@ -58,7 +60,8 @@ def update_book(isbn, email):
         br = models.getAssignment({"email": email, "isbn": isbn})
         reader = AddReaderForm(request.form, obj=br)
         if request.method == 'POST':
-            models.updateAssignment({"email": reader.email.data, "isbn": reader.isbn.data})
+            models.updateAssignment(
+                {"email": reader.email.data, "isbn": reader.isbn.data})
             return redirect(url_for('show_books'))
         return render_template('update.html', reader=reader)
     except Exception as e:
@@ -71,7 +74,8 @@ def signup():
     try:
         signupform = SignUpForm(request.form)
         if request.method == 'POST':
-            models.addProfessor({"email": signupform.email.data, "password": signupform.password.data})
+            models.addProfessor(
+                {"email": signupform.email.data, "password": signupform.password.data})
             return redirect(url_for('signin'))
         return render_template('signup.html', signupform=signupform)
     except Exception as e:
@@ -120,6 +124,7 @@ def logout():
     except Exception as e:
         flash(str(e))
         return redirect(url_for('index'))
+
 
 if __name__ == '__main__':
     app.run()
@@ -197,10 +202,10 @@ def update_order(order_id, factory_name, buyer_id, product_name, trans_mode, qua
     except:
         return jsonify("Quantity type must be Int")
 
+
 @app.route('/order_sum_insight')
 def order_sum_insight():
     rollup = models.rollup_func()
-
     try:
         cube = models.cube_func()
     except:
@@ -210,6 +215,67 @@ def order_sum_insight():
             "buyer_id": ""
         }
     return render_template('order_sum_insight.html', rollup=rollup, cube=cube)
+
+
+@app.route('/order_sum_buyer_id')
+def sum_buyer_id():
+    try:
+        output = models.rollup_at_buyer_id()
+    except:
+        output = {
+            "sum": "",
+            "buyer_id": ""
+        }
+    return render_template('order_sum_buyer_id.html', output=output)
+
+
+@app.route('/order_sum_factory_name')
+def sum_factory_name():
+    try:
+        output = models.rollup_at_factory_name()
+    except:
+        output = {
+            "sum": "",
+            "factory_name": ""
+        }
+    return render_template('order_sum_factory_name.html', output=output)
+
+
+@app.route('/order_sum_trans_mode')
+def sum_trans_mode():
+    try:
+        output = models.rollup_at_trans_mode()
+    except:
+        output = {
+            "sum": "",
+            "trans_mode": ""
+        }
+    return render_template('order_sum_trans_mode.html', output=output)
+
+
+@app.route('/order_sum_product_name')
+def sum_product_name():
+    try:
+        output = models.rollup_at_product_name()
+    except:
+        output = {
+            "sum": "",
+            "product_name": ""
+        }
+    return render_template('order_sum_product_name.html', output=output)
+
+
+@app.route('/order_sum_order_time')
+def sum_order_time():
+    try:
+        output = models.rollup_at_order_time()
+    except:
+        output = {
+            "sum": "",
+            "order_time": ""
+        }
+    return render_template('order_sum_order_time.html', output=output)
+
 
 if __name__ == '__main__':
     app.run()
