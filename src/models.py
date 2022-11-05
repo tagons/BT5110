@@ -142,7 +142,7 @@ class Models:
             """
             SELECT buyer_id, SUM(quantity)
             FROM order_info 
-            GROUP BY CUBE(buyer_id);
+            GROUP BY (buyer_id);
             """
         )
 
@@ -151,7 +151,7 @@ class Models:
             """
             SELECT factory_name, SUM(quantity)
             FROM order_info 
-            GROUP BY CUBE(factory_name);
+            GROUP BY (factory_name);
             """
         )
 
@@ -160,7 +160,7 @@ class Models:
             """
             SELECT order_time, SUM(quantity)
             FROM order_info 
-            GROUP BY CUBE(product_name);
+            GROUP BY (product_name);
             """
         )
 
